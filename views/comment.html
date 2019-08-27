@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HiKin-Coffee 评论社区</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/comment.css">
+    <script src="../js/comment.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div id="search">
+            <div id="search_search">
+                <span class="search_search"></span>
+                <form action="#">
+                    <input type="text" id="search_input" placeholder="蓝山咖啡">
+                </form>
+                <span class="search_display"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="mapIcon"></a>
+            <ul class="head_ul1">
+                <span class="head_map"></span>
+                <li class="head_li1" id="head_li1">
+                    <a href="#">中国</a>
+
+                </li>
+                <li class="head_li1"><a href="#">简体中文</a></li>
+                <li class="head_li1"><a href="#">客户服务</a></li>
+            </ul>
+            <ul class="head_ul2">
+                <li class="head_li2">
+                    <a href="login1.html" class="head_Login">登录</a>
+                </li>
+                <li class="head_li2"><span class="head_xin"></span></li>
+                <li class="head_li2"><span class="head_Shop_logo"></span>
+                    <a href="shopCar.html" class="head_Shop">购物车</a></li>
+                <li class="head_li2"><span class="head_s1"></span></li>
+            </ul>
+        </div>
+
+        <div id="menu" class="menu">
+            <ul class="head_ul3">
+                <li class="head_li3"><a href="coffee_hot.html">热门饮品</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">蓝山咖啡</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">拿铁咖啡</a><span></span></li>
+                <li class="head_li3"><a href="milkTea.html">浓郁奶茶</a><span></span></li>
+                <li class="head_li3"><a href="cake.html">慕斯蛋糕</a><span></span></li>
+                <li class="head_li3"><a href="story.html">高薪故事</a><span></span></li>
+            </ul>
+        </div>
+        <div id="menu_List">
+            <div id="menu_List_position">
+                <ul>
+                    <li>女士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+                <ul>
+                    <li>男士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <img src="../imgs/map_triangle.png" alt="" id="triangle">
+            <p class="location_Strong">网上商城</p>
+
+            <p class="location_txt">请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+            <div class="location_d location_txt">
+                <span class="location_dir">
+                    <span>配送至：</span>
+                    <a>中国</a>
+                </span>
+                <a class="location_change location_txt"> 更改国家/地区</a>
+            </div>
+            <div class="head_city">
+                <select id="province" class="location_option">
+                    <option value="" onchange="selP(this)">请选择省</option>
+                    <!-- <option value="" >请选择省</option> -->
+                </select>
+                <select id="city" class="location_option">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <p class="location_Strong">直营店查询</p>
+            <p class="location_txt location_local"><span class="location_airPlan"></span>使用我的当前位置</p>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="banner"></div>
+    </div>
+    <div id="shenti">
+        <h1>咖啡是锦上的花，你是我雪里的炭</h1>
+        <div id="d1">
+            <span><img src="../imgs/12.jpg" alt=""></span>
+        </div id="d2">
+        <p id="p1">牵牵扯扯之间，虽然不是一粥一饭，竟然也有些天长地久的味道。</p>
+        <p id="p2">一群事业有成的校友去探望大学时的老教授。谈话很快就转换成了抱怨工作和生活中的压力。教授站起来，走进厨房。回到客厅时，教授的手里端着一大壶咖啡和各式各样的杯子，
+            有瓷的、塑料的、玻璃的、水晶的，一些普通，一些昂贵，一些精致。教授让他的学生用这些杯子各自倒咖啡喝。生活是咖啡当所有的学生手里都端着一杯咖啡时，教授说：“如果
+            你们留心的话，你们就会发现你们每人手里拿的都是精致的或者昂贵的杯子。对你们来说，只想要最好的东西，这是正常的，而这正是你们的问题和压力的根源。你们每一个人真
+            正想要的是咖啡，不是杯子，但你们有意识地选择了最好的杯子，并且关注对方的杯子。现在考虑这个：生活是咖啡，金钱和社会地位是杯子，它们只是承载生活的道具，不能改
+            变生活的质量。过于注重杯子，我们就享受不到香浓的咖啡。所以，不要让杯子驱使你，而应该享受咖啡。”秋天已经来了，冬天也要来了，正适合静养。对于28岁的女人来说，她
+            知道一切都会过去，一切终将过去。就像一杯咖啡喝完以后，那些留在杯底的深色印迹会被清水洗掉；那些眼神的交错，那些心领和神会，那些温暖的微笑，都将封存进时光里，只
+            剩得下一些略微的痕迹。留待他年他月，一个更苍老的自己，悉心检视。经她手磨制出的新鲜咖啡粉，被周耀扬拿去调给了客人。两人分工合作，成绩良好。每一杯咖啡，自她手始，
+            于他手终，牵牵扯扯之间，虽然不是一粥一饭，竟然也有些天长地久的味道。</p>
+        <p id="p3">如果你在这个寂寞的午后，正好也在街上行走，经过这家有落地玻璃窗的咖啡馆时，看到一个已经不再年轻的男人脸上带着一种孩子般的神情，怀揣着一只漂亮的咖啡杯，无论你
+            是否明白，都请一定要在心里祝福他。如果你正好进去喝咖啡，说不定会看到一个新鲜出炉的公告：本店只卖咖啡不卖杯。如果你去问店员，店员一定会无奈地告诉你，先前来
+            过的那个男人多么奇怪，都快离开了，却又返回来，只是想买一只一个女客人用过的咖啡杯。他把那只咖啡杯轻轻地贴在胸前，抬头去看微热的阳光，光晕层层叠叠，像一个个
+            重叠在一起的句号。他不在乎是否还可以相遇，只想保留一只喝空的咖啡杯，请不要追问他为什么。通过她，他发现自己还拥有爱的能力。他现在最需要的，无非是如何尽快给
+            自己的心腾出空间。再好的咖啡杯，如果被卡布奇诺占据，再好的焦糖玛奇朵或拿铁也休想进来，这才真是小爱情里的大问题。</p>
+
+        <div class="outer">
+            <div class="comment_head">
+                用户：<input type="text" id="userName">
+            </div>
+            <textarea name="" id="userWords" cols="30" rows="10"></textarea>
+            <div class="word_footer">
+                <span id="wordsNum">还可以输入140个字</span>
+                <button id="btn">发布</button>
+            </div>
+            <ul id="myList">
+
+            </ul>
+        </div>
+        <!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+        <script>
+            var userName = document.getElementById('userName');
+            var userWords = document.getElementById('userWords');
+            var wordsNum = document.getElementById('wordsNum');
+            var btn = document.getElementById('btn');
+            var myList = document.getElementById('myList');
+            userName.oninput = function () {
+                // 当两个输入框内容都不为空时，改变按钮颜色，可以点击
+                judge();
+            }
+            userWords.oninput = function () {
+                // 当两个输入框内容都不为空时，改变按钮颜色，可以点击
+                judge();
+                // 每次输入都获取内容长度，并计算剩余可输入字数
+                var wLength = 140 - userWords.value.length;
+                userWords.onkeyup = function () {
+                    var num = this.value.length
+                    if (wLength <= 0) {
+                        alert('您的感想太多，超出了限制')
+                        this.value = this.value.substr(0, 140)
+                        wordsNum.innerHTML = '还可以输入0个字';
+                    } else {
+                        wordsNum.innerHTML = '还可以输入' + wLength + '个字';
+                    }
+                }
+            }
+            function judge() {
+                if (userWords.value && userName.value) {
+                    btn.style.backgroundColor = 'orangered';
+                    btn.onclick = function () {
+                        var newLi = document.createElement('li');
+                        newLi.innerHTML = '<img src="../images/photo.jpeg" alt=""><div class="right"><p class="top"><span class="name">' + '用户名：' + userName.value + '</span><a href="#" class="remove">删除</a></p><p class="words">' + '用户评论：' + userWords.value + '</p></div>';
+                        // 将创建好的li添加到ul中
+                        if (myList.children.length != 0) {
+                            console.log(myList.children);
+                            myList.insertBefore(newLi, myList.firstElementChild);
+                        } else {
+                            myList.appendChild(newLi);
+                        }
+                        // 元素添加完毕，清除输入框
+                        userName.value = '';
+                        userWords.value = '';
+                        wordsNum.innerHTML = '还可以输入140个字';
+                        btn.onclick = null;
+                        btn.style.backgroundColor = '#ccc';
+                        var remBtn = myList.getElementsByTagName('a');
+                        for (var i = 0; i < remBtn.length; i++) {
+                            remBtn[i].onclick = function () {
+                                var t = 0;
+                                var myLi = this.parentNode.parentNode.parentNode;
+                                var start = myLi.offsetHeight;
+                                myList.removeChild(myLi);
+                            }
+                        }
+                    }
+
+                } else {
+                    btn.style.backgroundColor = '#ccc';
+                    btn.onclick = null;
+                }
+            }
+        </script>
+
+    </div>
+    <iframe src="footer.html" frameborder="0" height="520px" width="100%"></iframe>
+</body>
+
+</html>

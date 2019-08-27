@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HiKin-Coffee 高薪故事</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/story.css">
+    <script src="../js/story.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div id="search">
+            <div id="search_search">
+                <span class="search_search"></span>
+                <form action="#">
+                    <input type="text" id="search_input" placeholder="蓝山咖啡">
+                </form>
+                <span class="search_display"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="mapIcon"></a>
+            <ul class="head_ul1">
+                <span class="head_map"></span>
+                <li class="head_li1" id="head_li1">
+                    <a href="#">中国</a>
+
+                </li>
+                <li class="head_li1"><a href="#">简体中文</a></li>
+                <li class="head_li1"><a href="#">客户服务</a></li>
+            </ul>
+            <ul class="head_ul2">
+                <li class="head_li2">
+                    <a href="login1.html" class="head_Login">登录</a>
+                </li>
+                <li class="head_li2"><span class="head_xin"></span></li>
+                <li class="head_li2"><span class="head_Shop_logo"></span>
+                    <a href="shopCar.html" class="head_Shop">购物车</a></li>
+                <li class="head_li2"><span class="head_s1"></span></li>
+            </ul>
+        </div>
+
+        <div id="menu" class="menu">
+            <ul class="head_ul3">
+                <li class="head_li3"><a href="coffee_hot.html">热门饮品</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">蓝山咖啡</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">拿铁咖啡</a><span></span></li>
+                <li class="head_li3"><a href="milkTea.html">浓郁奶茶</a><span></span></li>
+                <li class="head_li3"><a href="cake.html">慕斯蛋糕</a><span></span></li>
+                <li class="head_li3"><a href="story.html">高薪故事</a><span></span></li>
+            </ul>
+        </div>
+        <div id="menu_List">
+            <div id="menu_List_position">
+                <ul>
+                    <li>女士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+                <ul>
+                    <li>男士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <img src="../imgs/map_triangle.png" alt="" id="triangle">
+            <p class="location_Strong">网上商城</p>
+
+            <p class="location_txt">请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+            <div class="location_d location_txt">
+                <span class="location_dir">
+                    <span>配送至：</span>
+                    <a>中国</a>
+                </span>
+                <a class="location_change location_txt"> 更改国家/地区</a>
+            </div>
+            <div class="head_city">
+                <select id="province" class="location_option">
+                    <option value="" onchange="selP(this)">请选择省</option>
+                    <!-- <option value="" >请选择省</option> -->
+                </select>
+                <select id="city" class="location_option">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <p class="location_Strong">直营店查询</p>
+            <p class="location_txt location_local"><span class="location_airPlan"></span>使用我的当前位置</p>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="banner"></div>
+    </div>
+    <div id="shenti">
+        <!-- <h2>咖啡的故事</h2> -->
+        <div id="content">
+            <div id="d1">
+                <ul>
+                    <span><img src="../imgs/1.jpg" alt=""></span>
+                    <li><a href="comment.html">加盐&的咖啡</a></li>
+                    <p>他和她的相识是在一个宴会上，那时的她年轻美丽，身边有很多的追求者，而他却是一个很普通的人。因此，当宴会
+                        结束，他邀请她一块去喝咖啡的时侯，她很吃惊，然而，出于礼貌，她还是答应了。在咖啡馆里，两个人之间的气氛很是...</p>
+                </ul>
+                <ul>
+                    <span><img src="../imgs/2.jpg" alt=""></span>
+                    <li><a href="comment.html">把咖啡渣&穿到身上去</a></li>
+                    <p>35岁的陈国钦原先是台北一家纺织厂的普通车间主任，5年前因为工作成绩突出，他被公司派去参加一个管理课程的培训。也就在那里，陈国钦认识了
+                        星巴克台湾分公司的一位部门经理。那位经理邀请他参观了星巴克台湾分公司，在那...</p>
+                </ul>
+                <ul>
+                    <span><img src="../imgs/3.jpg" alt=""></span>
+                    <li><a href="comment.html">迷你&咖啡屋</a></li>
+                    <p>识字不多的骆荣从四川老家到这里来打工，一直没找到一件称心的工作，因此自暴自弃，过着今朝有酒今朝醉的生活。这晚是周末，他在街上漫无目的地行走，
+                        想找个露天的娱乐场所，既能玩又消费不贵。走过一家商场门口时，见里面灯火辉...</p>
+                </ul>
+            </div>
+            <div id="d2">
+                <ul>
+                    <span><img src="../imgs/4.jpg" alt=""></span>
+                    <li><a href="comment.html">半杯&咖啡的姻缘</a></li>
+                    <p>初识田菁是在一次省团委的培训班上。一天课间休息，我刚站起来挪座，就与身后一个手里拿着半杯咖啡的女孩撞在一起。几乎是同时，两人都说了一声“对
+                        不起”，惹得教室里的学员都笑了起来。半杯喝剩的咖啡就这么溅在我的衬衫上...</p>
+                </ul>
+                <ul>
+                    <span><img src="../imgs/5.jpg" alt=""></span>
+                    <li><a href="comment.html">咖啡&是锦上的花，你是我雪里的炭</a></li>
+                    <p>　牵牵扯扯之间，虽然不是一粥一饭，竟然也有些天长地久的味道。是谁的手令一颗心这样灰。1月的上午，苏明蓝走在上海的第一场雪里，漫天的细碎
+                        散落下来，停在睫毛上，像最冰凉的梦境。她带着一丝恍惚的微笑，推开waiting bar...</p>
+                </ul>
+                <ul>
+                    <span><img src="../imgs/6.jpg" alt=""></span>
+                    <li><a href="comment.html">生活是&咖啡</a></li>
+                    <p>　一群事业有成的校友去探望大学时的老教授。谈话很快就转换成了抱怨工作和生活中的压力。教授站起来，走进厨房。回到客厅时，教授的手里端着一大壶
+                        咖啡和各式各样的杯子，有瓷的、塑料的、玻璃的、水晶的，一些普通，一些昂贵，一...</p>
+                </ul>
+            </div>
+            <div id="d3">
+                <ul>
+                    <span><img src="../imgs/7.jpg" alt=""></span>
+                    <li><a href="comment.html">把咖啡&磨成金子</a></li>
+                    <p>“霍华德&middot;舒尔茨把咖啡磨成了金子！”美国《财富》杂志曾如此评价这位星巴克咖啡公司的全球董事长。舒尔茨的老母亲或许没看过《财富》的报道。
+                        一次，她由儿子陪着参观西雅图星巴克中心。颤巍巍地走过许多部门和工作室后，...</p>
+                </ul>
+                <ul>
+                    <span><img src="../imgs/9.jpg" alt=""></span>
+                    <li><a href="comment.html">只卖咖啡&不卖杯</a></li>
+                    <p>他31岁，就要结婚了，女友突然以婚前恐惧症为由拖延婚期，继而又跑到美国，很快断了联系。那段日子，他的状态很糟，有时刚点上一支烟，又会烦闷
+                        地掐掉；约了哥们儿去酒吧喝酒，40度的龙舌兰刚一打开，他就会止不住地哭泣。...</p>
+                </ul>
+                <ul>
+                    <span><img src="../imgs/10.jpg" alt=""></span>
+                    <li><a href="comment.html">朋友寄来蓝山&咖啡</a></li>
+                    <p>识字不多的骆荣从四login2.html老家到这里来打工，一直没找到一件称心的工作，因此自暴自弃，过着今朝有酒今朝醉的生活。这晚是周末，他在街上漫无目的地行走，
+                        想找个露天的娱乐场所，既能玩又消费不贵。走过一家商场门口时，见里面灯火辉...</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" height="520px" width="100%"></iframe>
+</body>
+
+</html>

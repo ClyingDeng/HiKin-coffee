@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HiKin-Coffee 个人信息</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/personalinfo.css">
+    <script src="../js/personalinfo.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div id="search">
+            <div id="search_search">
+                <span class="search_search"></span>
+                <form action="#">
+                    <input type="text" id="search_input" placeholder="蓝山咖啡">
+                </form>
+                <span class="search_display"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="mapIcon"></a>
+            <ul class="head_ul1">
+                <span class="head_map"></span>
+                <li class="head_li1" id="head_li1">
+                    <a href="#">中国</a>
+
+                </li>
+                <li class="head_li1"><a href="#">简体中文</a></li>
+                <li class="head_li1"><a href="#">客户服务</a></li>
+            </ul>
+            <ul class="head_ul2">
+                <li class="head_li2">
+                    <a href="login1.html" class="head_Login">登录</a>
+                </li>
+                <li class="head_li2"><span class="head_xin"></span></li>
+                <li class="head_li2"><span class="head_Shop_logo"></span>
+                    <a href="shopCar.html" class="head_Shop">购物车</a></li>
+                <li class="head_li2"><span class="head_s1"></span></li>
+            </ul>
+        </div>
+
+        <div id="menu" class="menu">
+            <ul class="head_ul3">
+                <li class="head_li3"><a href="coffee_hot.html">热门饮品</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">蓝山咖啡</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">拿铁咖啡</a><span></span></li>
+                <li class="head_li3"><a href="milkTea.html">浓郁奶茶</a><span></span></li>
+                <li class="head_li3"><a href="cake.html">慕斯蛋糕</a><span></span></li>
+                <li class="head_li3"><a href="story.html">高薪故事</a><span></span></li>
+            </ul>
+        </div>
+        <div id="menu_List">
+            <div id="menu_List_position">
+                <ul>
+                    <li>女士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+                <ul>
+                    <li>男士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <img src="../imgs/map_triangle.png" alt="" id="triangle">
+            <p class="location_Strong">网上商城</p>
+
+            <p class="location_txt">请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+            <div class="location_d location_txt">
+                <span class="location_dir">
+                    <span>配送至：</span>
+                    <a>中国</a>
+                </span>
+                <a class="location_change location_txt"> 更改国家/地区</a>
+            </div>
+            <div class="head_city">
+                <select id="province" class="location_option">
+                    <option value="" onchange="selP(this)">请选择省</option>
+                    <!-- <option value="" >请选择省</option> -->
+                </select>
+                <select id="city" class="location_option">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <p class="location_Strong">直营店查询</p>
+            <p class="location_txt location_local"><span class="location_airPlan"></span>使用我的当前位置</p>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="banner"></div>
+    </div>
+    <div id="info-info">
+        <div id="info-left">
+            <ul>
+                <li id="info-yourinfo">您的信息</li>
+                <li id="info-yourdetailinfo">
+                    <form action="#">
+                        称呼<select name="" id="call">
+                            <option value="">请选择</option>
+                            <option value="">男士</option>
+                            <option value="">女士</option>
+                        </select>
+                        姓<input type="text">
+                        名<input type="text">
+                    </form>
+                    <form action="#" id="myform"></form>
+                    国家/地区<select name="" id="">
+                        <option value="">中国</option>
+                    </select>
+                    生日：<input type="date" form="myform"><br>
+                    </select>
+                    联系电话<select name="" id="">
+                        <option value="">中国</option>
+                    </select>
+                    <input type="text">
+                    <hr>
+                </li>
+                <li class="info-intergial">个人积分</li>
+                <li class="info-personal-intergial">您的目前积分是1300</li>
+                <li class="info-personal-intergial"> <a href="#">积分兑换</a>
+                    <hr>
+                </li>
+
+                <li class="info-six-i">个人优惠券</li>
+                <li class="info-usecoupon">您目前可用优惠券：</li>
+                <li class="info-usecoupon">
+                    <div id="coupon">
+                        <div>
+                            <span>大师咖啡(新人专属)</span><br>
+                            <p>有效期至2019-08-24</p>
+                        </div>
+                        <div>
+                            <span>5.0</span>
+                            <span>折</span>
+                        </div>
+                        <div>
+                            <span class="info-rule">使用规则</span>
+                            <a href="#">立即使用</a>
+                        </div>
+                        <div class="userule">
+                            <span>本折扣券为新人专享，购买本店任意咖啡，享5折优惠(不含配送费),一次使用一张限一件商品，自领即日起有效期30天</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="info-usecoupon">
+                    <div id="coupon2">
+                        <div>
+                            <span>轻食优惠券(新人专属)</span><br>
+                            <p>有效期至2019-08-24</p>
+                        </div>
+                        <div>
+                            <span>5.0</span>
+                            <span>折</span>
+                        </div>
+                        <div>
+                            <span class="info-rule2">使用规则</span>
+                            <a href="#">立即使用</a>
+                        </div>
+                        <div class="userule2">
+                            <span>本折扣券为新人专享，购买本店轻食系列，享5折优惠(不含配送费),一次使用一张限一件商品，自领即日起有效期30天</span>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div id="info-right">
+            <div id="info-headPic">
+                <img src="../imgs/head_picture.jpg" alt=""><br>
+
+                <div id="info-mask">
+                    <img id="info-innerImg"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAeCAYAAACxHzfjAAAABGdBTUEAALGPC/xhBQAAAxBJREFUWAnNmEtsTGEUx2cGqUd0gaRNaS1UJG2JIDEqIrFCrLBgwRIrm1pJd1ILUY/YNF6xlNhJRVIhaTwmHjuVoCxIqGHhUSTMdMbvP7035nXv3HPvhDnJL9/c7/zPd859fPf77sRjRsvn872EJKHJGCr5L0jF4/GUJTZuEVPgQfRDMAYTllhH20bbDQco9EKI+NohFJmCp2A6OXdkxcEzeOD2BWlnSkRQgmYZzNKxjy3A95arkPfReLoUh31AsJi2y1M47cjQvCYmpwJ74CUEtVs1Bvd1k+R20EToXkC3Tu0xoy6Bfpj0zTDtTHN2owF0VSXk24yjpaqztHM+hwPwRlcyB2dL/Y1xRF3nIKtnUZMg2xhlVVShuhIq8r8aV6oXTsB2r0IKs9vLGbSfBHqmd8AqWASf4TkM8/yO01Y14tpx3AEtDEc4TqJ/VCHGIRuscAToIK4VrsAUyD6B3oPvdeDYddrl1YajP+mKnHZvsY6+01B4BclvLpKYNfBOwdh5WFGWoJ2+45CBr7C12K/f9Ontcgl+wDDMLtZwHL5IgpdCGlTkluKBy3/jXw26uj9hXbnf7xh9pCJvMIBu8Sa/JK4PXSd8By2pM9z+Wi3aQpHm2U3gWgbXTDzJQ363ViL50b2i6YMe2AkmMxfJ6LsgB6dMmWKxy+g16xVvsjBFaqulhT9tyYReGwa9XhRvsjBFaiekKxLGFKd4k4Up8iMZWk1Z/ooVp3iThSnyCRk6mECdlkzo56FfD4o3WZgir5FBE+eYKVMsdhT9HLhqjCu89TlJ24qD/qKCsJJlzCs5uo2QBa3TgQ19pJd5MwOMgZazw+B5R/DtAa3pE9ARuEKE6MMXqUQM0AYPQXYfdkMLJGAhbANtLmTj0GUp0MkRrUhnkCaS94HW8Wr2jc4BaLYWWFxkpP0kL2h97A9SxBnaDbAStJ/8AtpPjqL5TRvJIhXpZqaQKX7fc3C769bqgdd3xNy6jVjfgVRXRldyBPZzy3TrJqFRTJ+0+2BEO2N9Aw+Bds61/sFA8s9MG5KbcOgPdOSvUW7iPlcAAAAASUVORK5CYII="
+                        alt="">
+                </div>
+            </div>
+            <div>****</div>
+            <form action="">
+                <input id="info-myform" type="file" name="" id="" accept="image/jpg" onchange="changeHeadPic()"
+                    style="display:none">
+            </form>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" height="520px" width="100%"></iframe>
+</body>
+</html>

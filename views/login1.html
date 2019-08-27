@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HiKinCoffee</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/login1.css">
+</head>
+
+<body>
+    <div class="head">
+        <div id="search">
+            <div id="search_search">
+                <span class="search_search"></span>
+                <form action="#">
+                    <input type="text" id="search_input" placeholder="蓝山咖啡">
+                </form>
+                <span class="search_display"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="mapIcon"></a>
+            <ul class="head_ul1">
+                <span class="head_map"></span>
+                <li class="head_li1" id="head_li1">
+                    <a href="#">中国</a>
+
+                </li>
+                <li class="head_li1"><a href="#">简体中文</a></li>
+                <li class="head_li1"><a href="#">客户服务</a></li>
+            </ul>
+            <ul class="head_ul2">
+                <li class="head_li2">
+                    <a href="login1.html" class="head_Login">登录</a>
+                </li>
+                <li class="head_li2"><span class="head_xin"></span></li>
+                <li class="head_li2"><span class="head_Shop_logo"></span>
+                    <a href="shopCar.html" class="head_Shop">购物车</a></li>
+                <li class="head_li2"><span class="head_s1"></span></li>
+            </ul>
+        </div>
+
+        <div id="menu" class="menu">
+            <ul class="head_ul3">
+                <li class="head_li3"><a href="coffee_hot.html">热门饮品</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">蓝山咖啡</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">拿铁咖啡</a><span></span></li>
+                <li class="head_li3"><a href="milkTea.html">浓郁奶茶</a><span></span></li>
+                <li class="head_li3"><a href="cake.html">慕斯蛋糕</a><span></span></li>
+                <li class="head_li3"><a href="story.html">高薪故事</a><span></span></li>
+            </ul>
+        </div>
+        <div id="menu_List">
+            <div id="menu_List_position">
+                <ul>
+                    <li>女士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+                <ul>
+                    <li>男士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <img src="../imgs/map_triangle.png" alt="" id="triangle">
+            <p class="location_Strong">网上商城</p>
+
+            <p class="location_txt">请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+            <div class="location_d location_txt">
+                <span class="location_dir">
+                    <span>配送至：</span>
+                    <a>中国</a>
+                </span>
+                <a class="location_change location_txt"> 更改国家/地区</a>
+            </div>
+            <div class="head_city">
+                <select id="province" class="location_option">
+                    <option value="" onchange="selP(this)">请选择省</option>
+                    <!-- <option value="" >请选择省</option> -->
+                </select>
+                <select id="city" class="location_option">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <p class="location_Strong">直营店查询</p>
+            <p class="location_txt location_local"><span class="location_airPlan"></span>使用我的当前位置</p>
+        </div>
+    </div>
+    <!-- 登录主页面 -->
+    <div id="login1_container">
+        <div id="big">
+            <h2>登录</h2>
+            <div id="left">
+                <p>手机号码/电子邮箱<br>
+                    <input class="tele" type="text" style="font-size: 14px;" name="username" value="请输入电子邮箱或手机号">
+                </p>
+                <p>密码<br>
+                    <input id="txtword" type="password" name="password" value="" style="font-size: 9px;">
+                </p>
+                <p>
+
+                    <p>
+                        <input class="check" type="checkbox" name="" value="" checked>记住我
+                    </p>
+                    <div id="login">登录</div>
+                    <div id="three-login">
+                        <i><img id="qq" src="../imgs/QQ.png" alt="" onmouseover="this.src='../imgs/qq1.png'"
+                                onmouseout="this.src='../imgs/QQ.png'"></i>
+                        <i><img id="weixin" src="../imgs/weixin.png" alt="" onmouseover="this.src='../imgs/weixin1.png'"
+                                onmouseout="this.src='../imgs/weixin.png'"></i>
+                        <i><img id="zhifubao" src="../imgs/zhifubao.png" alt=""
+                                onmouseover="this.src='../imgs/zhifubao1.png'"
+                                onmouseout="this.src='../imgs/zhifubao.png'"></i>
+                    </div>
+
+                    <a id="forget-secret" href="#">忘记密码？</a>
+            </div>
+            <div id="right">
+                <h4>没有账号？</h4>
+                <p>拥有HIKIN COFFEE账号您将获得以下权利：</p>
+                <ul>
+                    <li>保存您的心愿清单</li>
+                    <li>个性化您的推荐内容</li>
+                    <li>时常有优惠活动</li>
+                </ul>
+                <div id="create">创建用户</div>
+
+
+            </div>
+        </div>
+
+        <!-- 创建账户页面 -->
+
+        <div id="zhanghu">
+            <img id="zhanghu-quxiao" src="../imgs/quxiao1.png">
+            <h4>创建您的账户</h4>
+            <div id="zhanghu_text">
+                <p>手机号码 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="txt" id="mytele" name="txt" value="请输入11位手机号码"
+                        style="font-size: 14px;color:#ccc;height: 18px;">
+                </p>
+                <p>手机验证码&nbsp;&nbsp;&nbsp;<input class="telecheck" type="txt" name="txt" value="请输入手机验证码"
+                        style="font-size: 14px;color:#ccc;height: 18px;">
+                    <a href="#">发送验证码</a>
+                </p>
+                <p>设置密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="txt" class="set-secret" name="txt" value="至少六个字符，区分大小写"
+                        style="font-size: 14px;color:#ccc;height: 18px;"><br>
+                </p>
+                <p>确认密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="txt" class="sure-secret" name="txt" value="确认密码"
+                        style="font-size: 14px;color:#ccc;height: 18px;"><br>
+                </p>
+                <span class="secret secret_top"><input type="checkbox" name="checkbox" id="secret1">我愿意接受HIkIN
+                    COFFEE邮件获取新款推荐及更多内容</span><br>
+                <span class="secret"><input type="checkbox" name="checkbox" id="secret1">创建账号代表您已接受HIKIN COFFEE的<a
+                        id="secret-policy" href="#">隐私政策</a>和<a id="use" href="#">使用条款</a></span><br>
+            </div>
+            <div id="createuser">创建用户</div>
+        </div>
+        <div id="erweima"><img src="../imgs/erweima.png" alt=""></div>
+
+        <!-- 忘记密码页面 -->
+        <div id="forget">
+            <h1>忘记密码</h1>
+            <img id="forget-quxiao" src="../imgs/quxiao1.png">
+            <div>
+                <p>请输入您注册时的手机号码/电子邮箱</p>
+                <p>如果有任何疑问，请联系HIKIN COFFEE官网客服：400.8302.543</p>
+            </div>
+            <div id="email">
+                <span>手机号码/电子邮箱</span><br>
+                <input id="forget-tel" type="text" name="text" value="请输入手机号码、电子邮箱"><br>
+
+                <button>提交</button>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" height="520px" width="100%"></iframe>
+
+    <script src="../js/login1.js"></script>
+
+</body>
+
+</html>
