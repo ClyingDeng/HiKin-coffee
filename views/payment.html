@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HiKinCoffee支付</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/payment.css">
+    <script src="../js/payment.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div id="search">
+            <div id="search_search">
+                <span class="search_search"></span>
+                <form action="#">
+                    <input type="text" id="search_input" placeholder="蓝山咖啡">
+                </form>
+                <span class="search_display"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="mapIcon"></a>
+            <ul class="head_ul1">
+                <span class="head_map"></span>
+                <li class="head_li1" id="head_li1">
+                    <a href="#">中国</a>
+
+                </li>
+                <li class="head_li1"><a href="#">简体中文</a></li>
+                <li class="head_li1"><a href="#">客户服务</a></li>
+            </ul>
+            <ul class="head_ul2">
+                <li class="head_li2">
+                    <a href="login1.html" class="head_Login">登录</a>
+                </li>
+                <li class="head_li2"><span class="head_xin"></span></li>
+                <li class="head_li2"><span class="head_Shop_logo"></span>
+                    <a href="shopCar.html" class="head_Shop">购物车</a></li>
+                <li class="head_li2"><span class="head_s1"></span></li>
+            </ul>
+        </div>
+
+        <div id="menu" class="menu">
+            <ul class="head_ul3">
+                <li class="head_li3"><a href="coffee_hot.html">热门饮品</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">蓝山咖啡</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">拿铁咖啡</a><span></span></li>
+                <li class="head_li3"><a href="milkTea.html">浓郁奶茶</a><span></span></li>
+                <li class="head_li3"><a href="cake.html">慕斯蛋糕</a><span></span></li>
+                <li class="head_li3"><a href="story.html">高薪故事</a><span></span></li>
+            </ul>
+        </div>
+        <div id="menu_List">
+            <div id="menu_List_position">
+                <ul>
+                    <li>女士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+                <ul>
+                    <li>男士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <img src="../imgs/map_triangle.png" alt="" id="triangle">
+            <p class="location_Strong">网上商城</p>
+
+            <p class="location_txt">请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+            <div class="location_d location_txt">
+                <span class="location_dir">
+                    <span>配送至：</span>
+                    <a>中国</a>
+                </span>
+                <a class="location_change location_txt"> 更改国家/地区</a>
+            </div>
+            <div class="head_city">
+                <select id="province" class="location_option">
+                    <option value="" onchange="selP(this)">请选择省</option>
+                    <!-- <option value="" >请选择省</option> -->
+                </select>
+                <select id="city" class="location_option">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <p class="location_Strong">直营店查询</p>
+            <p class="location_txt location_local"><span class="location_airPlan"></span>使用我的当前位置</p>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="banner"></div>
+    </div>
+    <div id="payContainer">
+        <div id="payLeft">
+            <ul>
+                <li>添加新地址<img src="../images/jiahao.png" alt=""></li>
+                <li>
+                    <form action="#">
+                        用户姓名<input type="text" name="" id=""><br>
+                        <select id="province" class="location_option">
+                            <option value="">请选择省</option>
+                        </select>
+                        <select id="city" class="location_option">
+                            <option value="">请选择市</option>
+                        </select><br>
+                        详细地址<input type="text"><br>
+                        <hr>
+                        手机号码<input type="text"><br>
+                        配送方式<br>
+                        <input type="radio" name="peisong" id="">普通快递(免费)<br>
+                        <input type="radio" name="peisong" id="">次日到达(￥180)
+                        <p>部分城市支持当日达、次日达；当日达请于当日上午9：30前提交订单并于10：00前完成支付，次日达请于当日下午3：30前提交订单并于4：00前完成支付。</p>
+                    </form>
+                </li>
+                <li>礼品留言和包装<img src="../images/jiahao.png" alt=""></li>
+                <li>
+                    <form action="#">你的留言<br><input type="textarea"><br><input type="checkbox" name="" id="">是否隐藏价格
+                    </form>
+                </li>
+                <li>支付方式<img src="../images/jiahao.png" alt=""></li>
+                <li>
+                    <form action="#">
+                        <span>在线支付</span>
+                        <input type="radio" name="money" id="">支付宝
+                        <input type="radio" name="money" id="">微信
+                        <input type="radio" name="money" id="">银联
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="payRight">
+            <ul>
+                <li>
+                    <p><strong>2</strong> 个商品</p>
+                </li>
+                <hr>
+                <li><img src="../images/coffee01.jpg" alt="">
+                    <ul>
+                        <li>牙买加咖啡<span>数量1</span></li>
+                        <li>半塘 无冰<span>￥ 300</span></li>
+                    </ul>
+                </li>
+                <hr>
+                <li><img src="../images/cake01.jpeg" alt="">
+                    <ul>
+                        <li>黑白巧克力慕斯<span>数量1</span></li>
+                        <li>15×15<span>￥ 180</span></li>
+                    </ul>
+                </li>
+                <hr>
+                <li><span>商品总计</span><span>￥ 330</span></li>
+                <li><span>运费</span><span>免费</span></li>
+                <li><span>共计</span><span><strong>￥</strong> 330</span></li>
+                <hr>
+                <li><span>外卖</span></li>
+                <li><span>立即购买</span></li>
+                <hr>
+                <li>
+                    <p>说明</p>
+                </li>
+                <li>
+                    <p>订单提交之后1小时内未付款，订单将被系统自动取消，请您尽快完成支付以确保商品能及时送达，有货商品和门店配货商品是分开寄出</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" height="520px" width="100%"></iframe>
+</body>
+
+</html>

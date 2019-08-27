@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HiKin-Coffee 热门咖啡</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <script src="../js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="../css/coffee_hot.css">
+    <script src="../js/coffee_hot.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <div id="search">
+            <div id="search_search">
+                <span class="search_search"></span>
+                <form action="#">
+                    <input type="text" id="search_input" placeholder="蓝山咖啡">
+                </form>
+                <span class="search_display"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="#" class="mapIcon"></a>
+            <ul class="head_ul1">
+                <span class="head_map"></span>
+                <li class="head_li1" id="head_li1">
+                    <a href="#">中国</a>
+                </li>
+                <li class="head_li1"><a href="#">简体中文</a></li>
+                <li class="head_li1"><a href="#">客户服务</a></li>
+            </ul>
+            <ul class="head_ul2">
+                <li class="head_li2">
+                    <a href="login1.html" class="head_Login">登录</a>
+                </li>
+                <li class="head_li2"><span class="head_xin"></span></li>
+                <li class="head_li2"><span class="head_Shop_logo"></span>
+                    <a href="shopCar.html" class="head_Shop">购物车</a></li>
+                <li class="head_li2"><span class="head_s1"></span></li>
+            </ul>
+        </div>
+
+        <div id="menu" class="menu">
+            <ul class="head_ul3">
+                <li class="head_li3"><a href="coffee_hot.html">热门饮品</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">蓝山咖啡</a><span></span></li>
+                <li class="head_li3"><a href="coffee.html">拿铁咖啡</a><span></span></li>
+                <li class="head_li3"><a href="milkTea.html">浓郁奶茶</a><span></span></li>
+                <li class="head_li3"><a href="cake.html">慕斯蛋糕</a><span></span></li>
+                <li class="head_li3"><a href="story.html">高薪故事</a><span></span></li>
+            </ul>
+        </div>
+        <div id="menu_List">
+            <div id="menu_List_position">
+                <ul>
+                    <li>女士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+                <ul>
+                    <li>男士</li>
+                    <li>2019早秋系列饮品</li>
+                    <li>2019春夏系列饮品</li>
+                    <li>2019早春系列饮品</li>
+                </ul>
+            </div>
+        </div>
+        <div class="location">
+            <img src="../imgs/map_triangle.png" alt="" id="triangle">
+            <p class="location_Strong">网上商城</p>
+
+            <p class="location_txt">请注意，在浏览过程中更改您的位置将会清除购物袋中的所有商品。</p>
+            <div class="location_d location_txt">
+                <span class="location_dir">
+                    <span>配送至：</span>
+                    <a>中国</a>
+                </span>
+                <a class="location_change location_txt"> 更改国家/地区</a>
+            </div>
+            <div class="head_city">
+                <select id="province" class="location_option">
+                    <option value="" onchange="selP(this)">请选择省</option>
+                    <!-- <option value="" >请选择省</option> -->
+                </select>
+                <select id="city" class="location_option">
+                    <option value="">请选择市</option>
+                </select>
+            </div>
+            <p class="location_Strong">直营店查询</p>
+            <p class="location_txt location_local"><span class="location_airPlan"></span>使用我的当前位置</p>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="container">
+        <div class="banner"></div>
+    </div>
+    <div id="coffee_hot">
+        <div id="bigLeft">
+            <div class="bcg">
+                <div class="fontbcg">
+                    <h6>高新咖啡</h6>
+                    <h5>限时抢购</h5>
+                </div>
+                <div class="time">
+                    <p>距离开始还剩</p>
+                    <div>
+                        <ul>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="dot"></li>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="dot"></li>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="dot"></li>
+                            <li class="num"><i></i><span></span></li>
+                            <li class="num"><i></i><span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="bargain">
+                <ul id="bargainList"></ul>
+            </div>
+        </div>
+        <div id="coffee">
+            <ul id="pagesList"></ul>
+            <ul id="coffeeList"></ul>
+        </div>
+    </div>
+    <iframe src="footer.html" frameborder="0" height="520px" width="100%"></iframe>
+</body>
+
+</html>

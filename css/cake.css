@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    /* background-color: rgba(200, 200, 200, 0.5); */
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    /* background-color: rgba(200, 200, 200, 0.5); */
+}
+
+.head {
+    width: 100%;
+    height: 150px;
+    background-image: url(../imgs/nav.png);
+    /* background-color: black; */
+    float: left;
+}
+
+.mapIcon {
+    display: block;
+    width: 526px;
+    height: 40px;
+    background-image: url(../imgs/hikin-coffee01.png);
+    background-size: 100% 100%;
+    margin-top: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -280px;
+    /* text-align: center; */
+    /* border-top: 35px solid transparent; */
+}
+
+.head_ul1 {
+    width: 300px;
+    height: 25px;
+    font-size: 18px;
+    font-family: "FuturaLT-Book";
+    float: left;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.head_li1 {
+    /* width: 60px; */
+    height: 25px;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.head_li1 a {
+    text-decoration: none;
+    color: #ccc;
+    /* float: left; */
+}
+
+.head_map {
+    float: left;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../imgs/map.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    /* margin-left: 20px; */
+    /* background-color: rgba(200, 200, 200, 0.5); */
+}
+
+.head_ul2 {
+    width: 350px;
+    height: 33px;
+    font-size: 18px;
+    font-family: "FuturaLT-Book";
+    float: right;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.head_li2 {
+    width: 80px;
+    height: 33px;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    /* line-height: 33px;
+    text-align: center; */
+}
+
+.head_li2 a {
+    text-decoration: none;
+    color: #ccc;
+    float: left;
+}
+
+.head_Login {
+    position: relative;
+    margin-left: 40px;
+}
+
+.head_xin {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../imgs/xin1.png);
+    background-size: 100% 100%;
+    /* position: relative;
+    left: 10px; */
+    margin: 0 auto;
+}
+
+.head_Shop_logo {
+    float: left;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../imgs/shop1.png);
+    background-size: 100% 100%;
+}
+
+.head_s1 {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url(../imgs/search1.png);
+    background-size: 100% 100%;
+    float: right;
+    margin-top: -5px;
+    margin-right: 20px;
+}
+
+#search_search {
+    width: 100%;
+    height: 80px;
+    background-color: #313131;
+    position: absolute;
+    z-index: 2;
+    display: none;
+}
+
+.search_search {
+    display: block;
+    width: 33px;
+    height: 33px;
+    float: left;
+    position: absolute;
+    left: 5%;
+    margin-left: -40px;
+    margin-top: 23px;
+    /* background-color: red; */
+    background-image: url(../imgs/search_search.png);
+    background-size: 100% 100%;
+    /* float: left; */
+}
+
+#search_input {
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -45%;
+    background-color: #313131;
+    border: 1px solid #222;
+    color: #f1f1f1;
+    font-size: 16px;
+    border-radius: 15px;
+    padding-left: 10px;
+    /* float: left; */
+}
+
+.search_display {
+    display: block;
+    width: 33px;
+    height: 33px;
+    float: right;
+    position: absolute;
+    right: 5%;
+    margin-right: -50px;
+    margin-top: 23px;
+    /* background-color: red; */
+    background-image: url(../imgs/search_display.png);
+    background-size: 100% 100%;
+}
+
+.head_ul3 {
+    width: 676px;
+    height: 70px;
+    font-size: 18px;
+    font-family: "FuturaLT-Book";
+    float: left;
+    /* margin-top: 35px; */
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    margin-left: -338px;
+}
+
+.head_li3 {
+    height: 70px;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    margin-right: 40px;
+}
+
+.head_li3 a {
+    text-decoration: none;
+    color: #ccc;
+    /* color: white; */
+    float: left;
+}
+
+.head_li3:hover span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../imgs/map_triangle.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    /* background-color: #fff; */
+}
+
+.location {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-color: #eee;
+    top: 80px;
+    left: 50px;
+    padding: 40px;
+    display: none;
+    z-index: 2;
+}
+
+#triangle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: -2px;
+}
+
+.location_txt {
+    color: #222;
+    font-size: 14px;
+}
+
+.location_d {
+    margin-top: 20px;
+}
+
+.location_dir {
+    display: block;
+    width: 120px;
+    height: 20px;
+    float: left;
+    line-height: 20px;
+    text-align: 0 center;
+    border-right: 1px solid black;
+}
+
+.location_change {
+    margin-left: 30px;
+}
+
+.head_city {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.location_option {
+    width: 90px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.location_Strong {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.location_airPlan {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../imgs/location.png);
+    background-size: 100% 100%;
+    float: left;
+    margin-right: 8px;
+}
+
+#menu_List {
+    /* width: 100%; */
+    height: 280px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* font-size: 0; */
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    /* background-color: #FAF6F4; */
+    background-color: #e7e7e7;
+    opacity: 0.92;
+    position: relative;
+    display: none;
+}
+
+#menu_List_position {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -100px;
+    /* float: left;
+    text-align: center; */
+}
+
+#menu_List ul {
+    list-style: none;
+    width: 200px;
+    /* height: 300px; */
+    float: left;
+    margin-right: 30px;
+    color: #363d4c;
+}
+
+#menu_List ul li {
+    margin-bottom: 20px;
+}
+
+.text1 {
+    color: #ccc;
+}
+
+.text {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 720px;
+    /* background-color: red; */
+    z-index: -1;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(../imgs/banner.jpg);
+    background-size: 100% 100%;
+}
+
+#head {
+    width: 100%;
+    height: 500px;
+    background-color: #f00;
+}
+#cake_style {
+    width: 98%;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #e7e7e7;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+}
+
+#cake {
+    position: relative;
+    width: 1400px;
+    height: 800px;
+    /* border: 1px solid #e7e7e7; */
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+#cake li {
+    float: left;
+    width: 300px;
+    height: 500px;
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    overflow: hidden;
+    margin: 8px;
+    margin-left: 100px;
+    background-color: #e7e7e7;
+}
+
+#cake li img {
+    width: 300px;
+    height: 300px;
+    /* background-color: transparent; */
+}
+
+#cake li h3 {
+    font-size: 25px;
+    color: #00f;
+    margin-bottom: 10px;
+    text-align: center;
+    display: none;
+}
+
+#cake li p {
+    font-size: 20px;
+    display: none;
+}
+
+#pagesList {
+    width: 1400px;
+    height: 800px;
+    /* background-color: #fff; */
+    position: absolute;
+    left: 50%;
+    top:650px;
+    bottom: 0;
+    margin-left: -140px;
+    /* z-index: 2; */
+}
+
+#pagesList li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #e7e7e7;
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#pagesList li.selectedPage {
+    border: 1px solid #f00;
+    background: #ccc;
+    font-weight: bolder;
+}
+
+#pagesList li.unselectedPage {
+    border: 1px solid #ccc;
+    background: #fff;
+    font-weight: 400;
+}
